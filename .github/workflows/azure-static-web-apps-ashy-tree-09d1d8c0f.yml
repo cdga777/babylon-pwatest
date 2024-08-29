@@ -16,8 +16,7 @@ jobs:
     name: Build and Deploy Job
     steps:
       - name: Install Dependencies
-          run: |
-            npm install
+        run: npm install
       - uses: actions/checkout@v4
         with:
           submodules: true
