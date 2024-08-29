@@ -14,6 +14,8 @@ jobs:
       #  uses: actions/setup-node@v1
       #  with:
       #    node-version: '16.13'
+      - name: Clean Cache
+        run: npm cache clean --force
 
       - name: Install Dependencies
         run: npm install
