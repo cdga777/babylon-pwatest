@@ -19,6 +19,8 @@ jobs:
         with:
           submodules: true
           lfs: false
+        env:
+          ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
