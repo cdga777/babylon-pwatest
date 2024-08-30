@@ -16,7 +16,7 @@ jobs:
     name: Build and Deploy Job
     steps:
       - name: Listing files
-        run: ls path.relative('${{ github.event.repository.name }}')
+        run: ls /
       - name: Clean Cache
         run: npm cache clean --force
       - name: Install Dependencies
