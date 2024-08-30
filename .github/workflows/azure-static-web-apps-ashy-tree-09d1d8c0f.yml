@@ -27,6 +27,10 @@ jobs:
         run: id -g -n
       - name: Show group
         run: groups
+      - name: Change Permission
+        run: chown runner.docker -R /home/runner/.config
+      - name: Change Permission
+        run: chown runner.docker -R /home/runner/.gitconfig
       - uses: actions/checkout@v4
         with:
           submodules: true
