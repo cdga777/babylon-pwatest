@@ -10,6 +10,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Moving to folder main
+        run: cd /home/runner/work/babylon-pwatest/
+
       - name: Listing files
         run: ls
       #- name: Setup Node
