@@ -16,7 +16,7 @@ jobs:
     name: Build and Deploy Job
     steps:
       - name: Listing files
-        run: ls /home/runner/work/babylon-pwatest/
+        run: ls /home/runner/work/babylon-pwatest/babylon-pwatest/
       - name: Clean Cache
         run: npm cache clean --force
       - name: Install Dependencies
