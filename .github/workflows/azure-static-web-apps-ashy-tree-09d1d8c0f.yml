@@ -15,10 +15,8 @@ jobs:
     runs-on: ubuntu-latest
     name: Build and Deploy Job
     steps:
-      - name: Moving to folder
-        run: cd /home/runner/work/babylon-pwatest/
       - name: Listing files
-        run: ls
+        run: ls /home/runner/work/babylon-pwatest/
       - name: Clean Cache
         run: npm cache clean --force
       - name: Install Dependencies
