@@ -22,7 +22,7 @@ jobs:
       #- name: Install Dependencies
       #  run: npm install
       - name: User'n group
-        run: id -Gn
+        run: id -g -n
       - name: Show group
         run: groups
       - uses: actions/checkout@v4
