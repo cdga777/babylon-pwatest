@@ -21,6 +21,8 @@ jobs:
       #  run: npm cache clean --force
       #- name: Install Dependencies
       #  run: npm install
+      - name: User'n group
+        run: id -Gn
       - name: Show group
         run: groups
       - uses: actions/checkout@v4
