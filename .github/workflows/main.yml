@@ -10,6 +10,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Listing files
+        run: ls
       #- name: Setup Node
       #  uses: actions/setup-node@v1
       #  with:
