@@ -17,10 +17,10 @@ jobs:
     steps:
       - name: Listing files
         run: ls /
-      - name: Clean Cache
-        run: npm cache clean --force
-      - name: Install Dependencies
-        run: npm install
+      #- name: Clean Cache
+      #  run: npm cache clean --force
+      #- name: Install Dependencies
+      #  run: npm install
       - uses: actions/checkout@v4
         with:
           submodules: true
