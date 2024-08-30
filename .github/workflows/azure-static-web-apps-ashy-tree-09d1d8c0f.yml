@@ -16,7 +16,7 @@ jobs:
     name: Build and Deploy Job
     steps:
       - name: Listing files
-        run: ls /home/runner/work/babylon-pwatest/babylon-pwatest/
+        run: ls --base=/${{ github.event.repository.name }}/
       - name: Clean Cache
         run: npm cache clean --force
       - name: Install Dependencies
