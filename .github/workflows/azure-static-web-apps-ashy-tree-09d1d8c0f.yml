@@ -41,7 +41,7 @@ jobs:
       - name: Change Permission 4
         run:  chmod g+w /home/runner/.nvm/.git/config
       - name: Listing files 2
-        run: ls -alR /home/runner/.nvm/.git
+        run: ls -alR /usr/bin/git
         #- name: Change Permission 4
       #  run: chown runner.docker -R /usr/bin/git/.gitconfig
       - uses: actions/checkout@v4
