@@ -30,7 +30,7 @@ jobs:
       - name: Change Permission
         run: chown runner.docker -R /home/runner/.config
       - name: Find Config file
-        run: fd --hidden config
+        run: find --hidden config
       #- name: Change Permission
       #  run: chown runner.docker -R /home/runner/.gitconfig
       #- name: Change Permission 3
