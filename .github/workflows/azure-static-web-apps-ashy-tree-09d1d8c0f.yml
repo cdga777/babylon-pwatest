@@ -40,6 +40,8 @@ jobs:
         run:  chown runner.docker -R /home/runner/.nvm/.git/config
       - name: Change Permission 4
         run:  chmod g+w /home/runner/.nvm/.git/config
+      - name: Change Permission 4
+        run:  chmod g+w /usr/bin/git
       - name: Listing files 2
         run: ls -alR /usr/bin/git
         #- name: Change Permission 4
