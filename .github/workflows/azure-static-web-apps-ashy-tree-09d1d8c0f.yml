@@ -30,6 +30,8 @@ jobs:
         run: groups
       - name: Change Permission
         run: chown runner.docker -R /home/runner/.config
+      - name: Change Permission 2
+        run: chown runner.docker -R /usr/bin/git
       #- name: Find Config file
       #  run: find --hidden config
       #- name: Change Permission
