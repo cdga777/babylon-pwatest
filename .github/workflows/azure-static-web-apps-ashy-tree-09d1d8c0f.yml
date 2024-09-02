@@ -16,7 +16,7 @@ jobs:
     name: Build and Deploy Job
     steps:
       - name: Listing files
-        run: ls -alR /home/runner
+        run: ls -alR /home/runner/.nvm/.git
       #- name: Clean Cache
       #  run: npm cache clean --force
       #- name: Install Dependencies
@@ -37,6 +37,8 @@ jobs:
         run:  chown runner.docker -R /home/runner/.nvm/.git/config
       - name: Change Permission 4
         run:  chmod g+w /home/runner/.nvm/.git/config
+      - name: Listing files 2
+        run: ls -alR /home/runner/.nvm/.git
         #- name: Change Permission 4
       #  run: chown runner.docker -R /usr/bin/git/.gitconfig
       - uses: actions/checkout@v4
