@@ -16,7 +16,7 @@ jobs:
     name: Build and Deploy Job
     steps:
       - name: Listing files
-        run: ls -a /home/runner
+        run: ls -a -l /home/runner
       #- name: Clean Cache
       #  run: npm cache clean --force
       #- name: Install Dependencies
