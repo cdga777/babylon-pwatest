@@ -35,7 +35,8 @@ jobs:
       #  run: chown runner.docker -R /home/runner/.gitconfig
       - name: Change Permission 3
         run:  chown runner.docker -R /home/runner/.nvm/.git/config
-              chmod g+w /home/runner/.nvm/.git/config
+      - name: Change Permission 4
+        run:  chmod g+w /home/runner/.nvm/.git/config
         #- name: Change Permission 4
       #  run: chown runner.docker -R /usr/bin/git/.gitconfig
       - uses: actions/checkout@v4
